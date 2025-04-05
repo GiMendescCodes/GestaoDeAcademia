@@ -7,7 +7,7 @@ abstract class Pessoa {
 
     public Pessoa(String nome, int idade) {
         nomePessoa = nome;
-    idadePessoa = idade;
+        idadePessoa = idade;
     }
 
     public String getNomePessoa() {
