@@ -1,6 +1,6 @@
 package models;
 
-abstract class Cliente extends Pessoa {
+public class Cliente extends Pessoa {
 
     private String planoCliente;
 
@@ -13,9 +13,10 @@ abstract class Cliente extends Pessoa {
         return planoCliente;
     }
 
+
     @Override
-    public String toString() {
-        return "Cliente{" +
+    public String getDescricao() {
+        return "Cliente{"+
                 "planoCliente='" + planoCliente + '\'' +
                 ", nomePessoa='" + nomePessoa + '\'' +
                 ", idadePessoa=" + idadePessoa +

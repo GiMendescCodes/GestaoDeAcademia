@@ -2,21 +2,21 @@ package models;
 
 import java.util.ArrayList;
 
- class Academia {
+ public class Academia {
     private String nomeAcademia;
-    private ArrayList<Pessoa> pessoas;
+    private ArrayList<Pessoa> pessoasAcademia;
 
 
-     public Academia(ArrayList<Pessoa> pessoas) {
-         this.pessoas = pessoas;
-         this.pessoas = new ArrayList<>();
+     public Academia(String nomeAcademia) {
+         this.nomeAcademia = nomeAcademia;
+         this.pessoasAcademia = new ArrayList<>();
      }
      public void adicionarPessoa(Pessoa pessoa){
-         pessoas.add(pessoa);
+         pessoasAcademia.add(pessoa);
      }
     public void ListarPessoas(){
-        System.out.println("Lista de pssoas da academia: ");
-        for (Pessoa pessoasDaLista : pessoas){
+        System.out.println("Lista de pessoas da academia: ");
+        for (Pessoa pessoasDaLista : pessoasAcademia){
             System.out.println(pessoasDaLista.getDescricao());
         }
     }
